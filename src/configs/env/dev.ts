@@ -4,6 +4,9 @@ const config: Config = {
   api: {
     origin: "",
   },
+  cookie: {
+    domain: "",
+  },
   client: {
     origin: "",
   },

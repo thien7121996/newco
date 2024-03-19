@@ -39,6 +39,7 @@ export const FooterSection = styled.section`
 export const FooterMain = styled.div`
   display: flex;
   gap: 55px;
+  width: 100%;
 `;
 
 export const FooterColumn = styled.div`
