@@ -4,7 +4,7 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   margin: auto;
   height: 70px;
-  padding: 0px 0px 0px 40px;
+  padding: 0px;
   position: fixed;
   background-color: ${({ theme }) => theme.colors.primary_0};
 `;
@@ -26,7 +26,7 @@ export const HeaderLogo = styled.div``;
 export const Logo = styled.img``;
 
 export const HeaderMenu = styled.div`
-  flex: 0 0 60% !important;
+  flex: 0 0 50% !important;
 `;
 
 export const Menu = styled.ul``;

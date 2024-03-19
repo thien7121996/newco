@@ -22,7 +22,7 @@ export const FooterWrapper = styled.div`
 export const FooterSection = styled.section`
   display: flex;
   max-width: ${({ theme }) => theme.maxWidthLayout.deskop.fullWidth};
-  width: 100%;
+  width: 95%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -46,17 +46,16 @@ export const FooterColumn = styled.div`
 `;
 
 export const FooterMainColumn = styled.div`
-  flex: 0 0 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
   margin: 0 auto;
-  min-width: 585.96px;
   flex: none;
   order: 0;
   flex-grow: 1;
+  flex: 0 0 40%;
   > p {
     font-style: normal;
     font-weight: 400;
