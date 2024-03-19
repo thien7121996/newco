@@ -15,7 +15,7 @@ import {
 } from "./styles";
 import Facebook from "@/styles/assets/facebook.png";
 import Linkedin from "@/styles/assets/linkedin.png";
-import LogoFooter from "@/styles/assets/logoFooter.png";
+import LogoFooter from "@/styles/assets/logofooter.png";
 import Subtract from "@/styles/assets/subtract.png";
 /**
  * Footer layout component

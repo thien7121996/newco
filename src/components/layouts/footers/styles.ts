@@ -56,7 +56,7 @@ export const FooterMainColumn = styled.div`
   flex: none;
   order: 0;
   flex-grow: 1;
-  flex: 0 0 40%;
+  flex: 0 0 30%;
   > p {
     font-style: normal;
     font-weight: 400;
