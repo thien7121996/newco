@@ -24,7 +24,6 @@ export const FooterSection = styled.section`
   max-width: ${({ theme }) => theme.maxWidthLayout.deskop.fullWidth};
   width: 95%;
   margin: auto;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -44,6 +43,9 @@ export const FooterMain = styled.div`
 
 export const FooterColumn = styled.div`
   flex: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const FooterMainColumn = styled.div`
