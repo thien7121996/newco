@@ -15,7 +15,6 @@ export const ButtonWrapper = styled.button`
   flex: none;
   order: 1;
   flex-grow: 0;
-  height: 70px;
   cursor: pointer;
   img {
     margin-left: 10px;

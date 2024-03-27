@@ -3,7 +3,7 @@ export const CarrerNewsWrapper = styled.div`
   display: block;
   max-width: 100%;
   width: 100%;
-  margin: 140px 0px;
+  margin: 80px 0px;
 `;
 export const CarrerNewsSection = styled.div`
   max-width: ${({ theme }) => theme.maxWidthLayout.deskop.fullWidth};
@@ -33,7 +33,7 @@ export const CarrerNewsListBlog = styled.div`
   > div {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    :hover {
+    &:hover {
       background: #d80027;
       label,
       p,
@@ -49,7 +49,7 @@ export const CarrerNewsListBlog = styled.div`
     label {
       color: #d80027;
     }
-    :hover {
+    &:hover {
       background: #41b6b7;
       label {
         color: #fff;
@@ -82,7 +82,7 @@ export const CarrerNewsLearnMore = styled.button`
     gap: 8px;
     line-height: 1;
   }
-  :hover {
+  &:hover {
     background: #b1b5c3;
     a {
       color: #fff;

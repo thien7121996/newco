@@ -1,0 +1,1 @@
+export { MoreGallery } from "./MoreGallery";

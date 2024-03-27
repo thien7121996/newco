@@ -1,18 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
-import { BannerWrapper } from "./styles";
+import { SectionBG } from "./styles";
+import { AboutUs } from "@/components/ui/AboutUs";
 import { CarrerNews } from "@/components/ui/CarrerNews";
+import { CaseStudy } from "@/components/ui/CaseStudy/CaseStudy";
+import { ClientsSay } from "@/components/ui/ClientsSay";
 import { FlowOfUs } from "@/components/ui/FlowOfUs/FlowOfUs";
-import BannerHome from "@/styles/assets/bannerHome.png";
+import { HomeBanners } from "@/components/ui/HomeBanners";
+import { Partner } from "@/components/ui/Partner";
+import { Service } from "@/components/ui/Service";
 
 export const Home = () => {
   return (
     <>
-      <BannerWrapper>
-        <img src={BannerHome.src} alt="Logo" />
-      </BannerWrapper>
+      <HomeBanners />
+      <AboutUs />
+      <SectionBG>
+        <Service />
+        <CaseStudy />
+        <ClientsSay />
+      </SectionBG>
+      <Partner />
       <CarrerNews />
       <FlowOfUs />
     </>
   );
 };
+
 Home.displayName = "Home";

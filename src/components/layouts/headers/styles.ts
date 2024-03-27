@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ButtonWrapper } from "@/components/ui/Button/styles";
 
 export const HeaderWrapper = styled.div`
   width: 100%;
@@ -6,6 +7,7 @@ export const HeaderWrapper = styled.div`
   height: 70px;
   padding: 0px;
   position: fixed;
+  z-index: 99;
   background-color: ${({ theme }) => theme.colors.primary_0};
 `;
 
@@ -36,6 +38,11 @@ export const HeaderButton = styled.div`
   justify-content: flex-end;
   align-items: center;
   gap: 32px;
+  height: 100%;
+
+  ${ButtonWrapper} {
+    height: 100%;
+  }
 `;
 export const Button = styled.button``;
 export const HeaderLanguageButton = styled.div``;

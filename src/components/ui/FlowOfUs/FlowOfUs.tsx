@@ -1,14 +1,6 @@
 import { FC } from "react";
-import {
-  FlowButton,
-  FlowDescription,
-  FlowOfUsContent,
-  FlowOfUsNumberList,
-  FlowOfUsSection,
-  FlowOfUsWrapper,
-  FlowSubTitle,
-  FlowTitle,
-} from "./styles";
+import { FlowOfUsNumberList, FlowOfUsSection, FlowOfUsWrapper } from "./styles";
+import { BlockHeading } from "@/components/ui/BlockHeading";
 import { FlowBlock } from "@/components/ui/FlowBlock";
 
 export const FlowOfUs: FC = () => {
@@ -37,15 +29,14 @@ export const FlowOfUs: FC = () => {
             content="Make a difference: Join our charity campaign and help change lives!"
           />
         </FlowOfUsNumberList>
-        <FlowOfUsContent>
-          <FlowSubTitle>STATISTICS</FlowSubTitle>
-          <FlowTitle>FLOW OF USE</FlowTitle>
-          <FlowDescription>
+        <BlockHeading
+          subTitle="STATISTICS"
+          title="FLOW OF USE"
+          content="
             Your attention and consideration will lead the Republic of
-            <br /> Korea It creates a space of shining intelligence.
-          </FlowDescription>
-          <FlowButton>Contact Form</FlowButton>
-        </FlowOfUsContent>
+            <br /> Korea It creates a space of shining intelligence."
+          textButton="Contact Form"
+        />
       </FlowOfUsSection>
     </FlowOfUsWrapper>
   );

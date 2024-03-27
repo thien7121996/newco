@@ -17,6 +17,7 @@ export const LayoutWrapper = styled.div`
 
 export const LayoutPageWrapper = styled.div`
   width: 100%;
+
   margin: 0 auto;
 
   @media (max-width: ${MEDIA_QUERY.EXTRA_DESKTOP}) {

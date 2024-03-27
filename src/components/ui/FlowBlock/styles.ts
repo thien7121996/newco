@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import VectorFlow from "@/styles/assets/hover-flow.png";
+import VectorFlow from "@/styles/assets/red-after.png";
 export const FlowBlockSection = styled.div`
   display: flex;
   flex-direction: row;
@@ -47,25 +47,29 @@ export const FlowBlockWrapper = styled.div`
   background: #f9f9f9;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  :: after {
+  position: relative;
+  > :after {
     content: "";
-    position: relative;
+    position: absolute;
+    background: url(${VectorFlow.src}) no-repeat;
     display: block;
     height: 100%;
     background-size: contain;
     z-index: -1;
-    top: -5px;
-    left: 0;
-    transition: all 1.3s ease-in-out;
+    bottom: -28px;
+    left: 20px;
+    transition: all 0.7s ease-in-out;
+    display: block;
+    height: 32px;
+    width: 96%;
+    opacity: 0;
   }
-  :hover {
+  &:hover {
     background: #ffffff;
-    ::after {
-      content: "";
-      background: url(${VectorFlow.src}) no-repeat;
-      background-size: contain;
-    }
     box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
+    :after {
+      opacity: 1;
+    }
     ${FlowBlockTitle} {
       color: #141416;
     }
