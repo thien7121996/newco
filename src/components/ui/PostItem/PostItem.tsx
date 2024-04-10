@@ -25,7 +25,6 @@ export const PostItem: FC<Props> = ({
   title,
   thumbnailUrl,
   content,
-  textButton,
   stylePost,
 }) => {
   return (
