@@ -81,7 +81,8 @@
   align-items: center;
   margin-bottom: 0;
 }
-.wp-block[data-align=left] > .wp-block-file, .wp-block[data-align=right] > .wp-block-file {
+.wp-block[data-align="left"] > .wp-block-file,
+.wp-block[data-align="right"] > .wp-block-file {
   height: auto;
 }
 .wp-block-file .components-resizable-box__container {

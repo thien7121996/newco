@@ -13,9 +13,9 @@ export const FooterWrapper = styled.div`
   padding: 32px 0px;
   gap: 24px;
   background: ${({ theme }) => theme.colors.primary_800};
-
   @media (max-width: ${MEDIA_QUERY.TABLET}) {
-    display: none;
+  }
+  @media (max-width: ${MEDIA_QUERY.MOBILE}) {
   }
 `;
 
@@ -39,6 +39,11 @@ export const FooterMain = styled.div`
   display: flex;
   gap: 55px;
   width: 100%;
+
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    flex-direction: column;
+    gap: 32px;
+  }
 `;
 
 export const FooterColumn = styled.div`
@@ -67,6 +72,15 @@ export const FooterMainColumn = styled.div`
     letter-spacing: 0.004em;
     color: ${({ theme }) => theme.colors.secondary_100};
   }
+
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    > p {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.004em;
+    }
+  }
 `;
 
 export const HeadingFooter = styled.h3`
@@ -76,6 +90,10 @@ export const HeadingFooter = styled.h3`
   line-height: 24px;
   letter-spacing: 0.0025em;
   color: ${({ theme }) => theme.colors.primary_0};
+
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    text-align: center;
+  }
 `;
 
 export const Divided = styled.div`
@@ -90,6 +108,10 @@ export const FooterBottom = styled.div`
   justify-content: space-around;
   width: 100%;
   align-items: center;
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    flex-direction: column;
+    gap: 32px;
+  }
 `;
 
 export const FooterSocial = styled.ul`
@@ -129,6 +151,14 @@ export const FooterMenuBottom = styled.ul`
     align-self: stretch;
     flex-grow: 0;
     text-decoration: none;
+  }
+
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    flex-direction: column;
+    gap: 16px;
+    > li {
+      text-align: center;
+    }
   }
 `;
 

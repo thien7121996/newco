@@ -89,7 +89,9 @@
 .block-library-spacer__resize-container.has-show-handle {
   background: rgba(0, 0, 0, 0.1);
 }
-.is-dark-theme .wp-block-spacer.is-hovered .block-library-spacer__resize-container,
+.is-dark-theme
+  .wp-block-spacer.is-hovered
+  .block-library-spacer__resize-container,
 .is-dark-theme .block-library-spacer__resize-container.has-show-handle {
   background: rgba(255, 255, 255, 0.15);
 }
@@ -101,7 +103,8 @@
   height: 100% !important;
   width: 100% !important;
 }
-.block-library-spacer__resize-container .components-resizable-box__handle::before {
+.block-library-spacer__resize-container
+  .components-resizable-box__handle::before {
   content: none;
 }
 .block-library-spacer__resize-container.resize-horizontal {

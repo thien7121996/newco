@@ -3,18 +3,7 @@ import styled from "styled-components";
 export const MainBannerWrapper = styled.div`
   position: relative;
   padding-bottom: 100px;
-`;
-
-export const BackgroundWrapper = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  z-index: 2;
 `;
 
 export const Content = styled.div`

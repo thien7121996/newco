@@ -83,7 +83,8 @@
   justify-content: center;
   align-items: center;
   padding: 1em;
-  box-sizing: border-box; direction: ltr;
+  box-sizing: border-box;
+  direction: ltr;
   /**
    * Set a default background color for has-background-dim _unless_ it includes another
    * background-color class (e.g. has-green-background-color). The presence of another
@@ -95,10 +96,10 @@
    *   - Issue with alternative fix: https://github.com/WordPress/gutenberg/issues/26545
    */
 }
-.wp-block-cover-image.has-background-dim:not([class*=-background-color]),
-.wp-block-cover-image .has-background-dim:not([class*=-background-color]),
-.wp-block-cover.has-background-dim:not([class*=-background-color]),
-.wp-block-cover .has-background-dim:not([class*=-background-color]) {
+.wp-block-cover-image.has-background-dim:not([class*="-background-color"]),
+.wp-block-cover-image .has-background-dim:not([class*="-background-color"]),
+.wp-block-cover.has-background-dim:not([class*="-background-color"]),
+.wp-block-cover .has-background-dim:not([class*="-background-color"]) {
   background-color: #000;
 }
 .wp-block-cover-image .has-background-dim.has-background-gradient,
@@ -124,153 +125,278 @@
   z-index: 1;
   opacity: 0.5;
 }
-.wp-block-cover-image.has-background-dim.has-background-dim-10:not(.has-background-gradient)::before,
-.wp-block-cover-image.has-background-dim.has-background-dim-10 .wp-block-cover__background,
-.wp-block-cover-image.has-background-dim.has-background-dim-10 .wp-block-cover__gradient-background,
-.wp-block-cover.has-background-dim.has-background-dim-10:not(.has-background-gradient)::before,
-.wp-block-cover.has-background-dim.has-background-dim-10 .wp-block-cover__background,
-.wp-block-cover.has-background-dim.has-background-dim-10 .wp-block-cover__gradient-background {
+.wp-block-cover-image.has-background-dim.has-background-dim-10:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover-image.has-background-dim.has-background-dim-10
+  .wp-block-cover__background,
+.wp-block-cover-image.has-background-dim.has-background-dim-10
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-10:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover.has-background-dim.has-background-dim-10
+  .wp-block-cover__background,
+.wp-block-cover.has-background-dim.has-background-dim-10
+  .wp-block-cover__gradient-background {
   opacity: 0.1;
 }
-.wp-block-cover-image.has-background-dim.has-background-dim-20:not(.has-background-gradient)::before,
-.wp-block-cover-image.has-background-dim.has-background-dim-20 .wp-block-cover__background,
-.wp-block-cover-image.has-background-dim.has-background-dim-20 .wp-block-cover__gradient-background,
-.wp-block-cover.has-background-dim.has-background-dim-20:not(.has-background-gradient)::before,
-.wp-block-cover.has-background-dim.has-background-dim-20 .wp-block-cover__background,
-.wp-block-cover.has-background-dim.has-background-dim-20 .wp-block-cover__gradient-background {
+.wp-block-cover-image.has-background-dim.has-background-dim-20:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover-image.has-background-dim.has-background-dim-20
+  .wp-block-cover__background,
+.wp-block-cover-image.has-background-dim.has-background-dim-20
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-20:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover.has-background-dim.has-background-dim-20
+  .wp-block-cover__background,
+.wp-block-cover.has-background-dim.has-background-dim-20
+  .wp-block-cover__gradient-background {
   opacity: 0.2;
 }
-.wp-block-cover-image.has-background-dim.has-background-dim-30:not(.has-background-gradient)::before,
-.wp-block-cover-image.has-background-dim.has-background-dim-30 .wp-block-cover__background,
-.wp-block-cover-image.has-background-dim.has-background-dim-30 .wp-block-cover__gradient-background,
-.wp-block-cover.has-background-dim.has-background-dim-30:not(.has-background-gradient)::before,
-.wp-block-cover.has-background-dim.has-background-dim-30 .wp-block-cover__background,
-.wp-block-cover.has-background-dim.has-background-dim-30 .wp-block-cover__gradient-background {
+.wp-block-cover-image.has-background-dim.has-background-dim-30:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover-image.has-background-dim.has-background-dim-30
+  .wp-block-cover__background,
+.wp-block-cover-image.has-background-dim.has-background-dim-30
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-30:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover.has-background-dim.has-background-dim-30
+  .wp-block-cover__background,
+.wp-block-cover.has-background-dim.has-background-dim-30
+  .wp-block-cover__gradient-background {
   opacity: 0.3;
 }
-.wp-block-cover-image.has-background-dim.has-background-dim-40:not(.has-background-gradient)::before,
-.wp-block-cover-image.has-background-dim.has-background-dim-40 .wp-block-cover__background,
-.wp-block-cover-image.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background,
-.wp-block-cover.has-background-dim.has-background-dim-40:not(.has-background-gradient)::before,
-.wp-block-cover.has-background-dim.has-background-dim-40 .wp-block-cover__background,
-.wp-block-cover.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background {
+.wp-block-cover-image.has-background-dim.has-background-dim-40:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover-image.has-background-dim.has-background-dim-40
+  .wp-block-cover__background,
+.wp-block-cover-image.has-background-dim.has-background-dim-40
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-40:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover.has-background-dim.has-background-dim-40
+  .wp-block-cover__background,
+.wp-block-cover.has-background-dim.has-background-dim-40
+  .wp-block-cover__gradient-background {
   opacity: 0.4;
 }
-.wp-block-cover-image.has-background-dim.has-background-dim-50:not(.has-background-gradient)::before,
-.wp-block-cover-image.has-background-dim.has-background-dim-50 .wp-block-cover__background,
-.wp-block-cover-image.has-background-dim.has-background-dim-50 .wp-block-cover__gradient-background,
-.wp-block-cover.has-background-dim.has-background-dim-50:not(.has-background-gradient)::before,
-.wp-block-cover.has-background-dim.has-background-dim-50 .wp-block-cover__background,
-.wp-block-cover.has-background-dim.has-background-dim-50 .wp-block-cover__gradient-background {
+.wp-block-cover-image.has-background-dim.has-background-dim-50:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover-image.has-background-dim.has-background-dim-50
+  .wp-block-cover__background,
+.wp-block-cover-image.has-background-dim.has-background-dim-50
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-50:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover.has-background-dim.has-background-dim-50
+  .wp-block-cover__background,
+.wp-block-cover.has-background-dim.has-background-dim-50
+  .wp-block-cover__gradient-background {
   opacity: 0.5;
 }
-.wp-block-cover-image.has-background-dim.has-background-dim-60:not(.has-background-gradient)::before,
-.wp-block-cover-image.has-background-dim.has-background-dim-60 .wp-block-cover__background,
-.wp-block-cover-image.has-background-dim.has-background-dim-60 .wp-block-cover__gradient-background,
-.wp-block-cover.has-background-dim.has-background-dim-60:not(.has-background-gradient)::before,
-.wp-block-cover.has-background-dim.has-background-dim-60 .wp-block-cover__background,
-.wp-block-cover.has-background-dim.has-background-dim-60 .wp-block-cover__gradient-background {
+.wp-block-cover-image.has-background-dim.has-background-dim-60:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover-image.has-background-dim.has-background-dim-60
+  .wp-block-cover__background,
+.wp-block-cover-image.has-background-dim.has-background-dim-60
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-60:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover.has-background-dim.has-background-dim-60
+  .wp-block-cover__background,
+.wp-block-cover.has-background-dim.has-background-dim-60
+  .wp-block-cover__gradient-background {
   opacity: 0.6;
 }
-.wp-block-cover-image.has-background-dim.has-background-dim-70:not(.has-background-gradient)::before,
-.wp-block-cover-image.has-background-dim.has-background-dim-70 .wp-block-cover__background,
-.wp-block-cover-image.has-background-dim.has-background-dim-70 .wp-block-cover__gradient-background,
-.wp-block-cover.has-background-dim.has-background-dim-70:not(.has-background-gradient)::before,
-.wp-block-cover.has-background-dim.has-background-dim-70 .wp-block-cover__background,
-.wp-block-cover.has-background-dim.has-background-dim-70 .wp-block-cover__gradient-background {
+.wp-block-cover-image.has-background-dim.has-background-dim-70:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover-image.has-background-dim.has-background-dim-70
+  .wp-block-cover__background,
+.wp-block-cover-image.has-background-dim.has-background-dim-70
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-70:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover.has-background-dim.has-background-dim-70
+  .wp-block-cover__background,
+.wp-block-cover.has-background-dim.has-background-dim-70
+  .wp-block-cover__gradient-background {
   opacity: 0.7;
 }
-.wp-block-cover-image.has-background-dim.has-background-dim-80:not(.has-background-gradient)::before,
-.wp-block-cover-image.has-background-dim.has-background-dim-80 .wp-block-cover__background,
-.wp-block-cover-image.has-background-dim.has-background-dim-80 .wp-block-cover__gradient-background,
-.wp-block-cover.has-background-dim.has-background-dim-80:not(.has-background-gradient)::before,
-.wp-block-cover.has-background-dim.has-background-dim-80 .wp-block-cover__background,
-.wp-block-cover.has-background-dim.has-background-dim-80 .wp-block-cover__gradient-background {
+.wp-block-cover-image.has-background-dim.has-background-dim-80:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover-image.has-background-dim.has-background-dim-80
+  .wp-block-cover__background,
+.wp-block-cover-image.has-background-dim.has-background-dim-80
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-80:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover.has-background-dim.has-background-dim-80
+  .wp-block-cover__background,
+.wp-block-cover.has-background-dim.has-background-dim-80
+  .wp-block-cover__gradient-background {
   opacity: 0.8;
 }
-.wp-block-cover-image.has-background-dim.has-background-dim-90:not(.has-background-gradient)::before,
-.wp-block-cover-image.has-background-dim.has-background-dim-90 .wp-block-cover__background,
-.wp-block-cover-image.has-background-dim.has-background-dim-90 .wp-block-cover__gradient-background,
-.wp-block-cover.has-background-dim.has-background-dim-90:not(.has-background-gradient)::before,
-.wp-block-cover.has-background-dim.has-background-dim-90 .wp-block-cover__background,
-.wp-block-cover.has-background-dim.has-background-dim-90 .wp-block-cover__gradient-background {
+.wp-block-cover-image.has-background-dim.has-background-dim-90:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover-image.has-background-dim.has-background-dim-90
+  .wp-block-cover__background,
+.wp-block-cover-image.has-background-dim.has-background-dim-90
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-90:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover.has-background-dim.has-background-dim-90
+  .wp-block-cover__background,
+.wp-block-cover.has-background-dim.has-background-dim-90
+  .wp-block-cover__gradient-background {
   opacity: 0.9;
 }
-.wp-block-cover-image.has-background-dim.has-background-dim-100:not(.has-background-gradient)::before,
-.wp-block-cover-image.has-background-dim.has-background-dim-100 .wp-block-cover__background,
-.wp-block-cover-image.has-background-dim.has-background-dim-100 .wp-block-cover__gradient-background,
-.wp-block-cover.has-background-dim.has-background-dim-100:not(.has-background-gradient)::before,
-.wp-block-cover.has-background-dim.has-background-dim-100 .wp-block-cover__background,
-.wp-block-cover.has-background-dim.has-background-dim-100 .wp-block-cover__gradient-background {
+.wp-block-cover-image.has-background-dim.has-background-dim-100:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover-image.has-background-dim.has-background-dim-100
+  .wp-block-cover__background,
+.wp-block-cover-image.has-background-dim.has-background-dim-100
+  .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim.has-background-dim-100:not(
+    .has-background-gradient
+  )::before,
+.wp-block-cover.has-background-dim.has-background-dim-100
+  .wp-block-cover__background,
+.wp-block-cover.has-background-dim.has-background-dim-100
+  .wp-block-cover__gradient-background {
   opacity: 1;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-0,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-0,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-0,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-0 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-0,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-0,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-0,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-0 {
   opacity: 0;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-10,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-10,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-10,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-10 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-10,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-10,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-10,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-10 {
   opacity: 0.1;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-20,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-20,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-20,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-20 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-20,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-20,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-20,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-20 {
   opacity: 0.2;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-30,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-30,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-30,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-30 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-30,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-30,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-30,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-30 {
   opacity: 0.3;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-40,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-40,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-40,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-40 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-40,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-40,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-40,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-40 {
   opacity: 0.4;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-50,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-50,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-50,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-50 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-50,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-50,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-50,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-50 {
   opacity: 0.5;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-60,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-60,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-60,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-60 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-60,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-60,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-60,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-60 {
   opacity: 0.6;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-70,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-70,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-70,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-70 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-70,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-70,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-70,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-70 {
   opacity: 0.7;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-80,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-80,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-80,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-80 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-80,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-80,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-80,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-80 {
   opacity: 0.8;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-90,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-90,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-90,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-90 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-90,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-90,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-90,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-90 {
   opacity: 0.9;
 }
-.wp-block-cover-image .wp-block-cover__gradient-background.has-background-dim.has-background-dim-100,
-.wp-block-cover-image .wp-block-cover__background.has-background-dim.has-background-dim-100,
-.wp-block-cover .wp-block-cover__gradient-background.has-background-dim.has-background-dim-100,
-.wp-block-cover .wp-block-cover__background.has-background-dim.has-background-dim-100 {
+.wp-block-cover-image
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-100,
+.wp-block-cover-image
+  .wp-block-cover__background.has-background-dim.has-background-dim-100,
+.wp-block-cover
+  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-100,
+.wp-block-cover
+  .wp-block-cover__background.has-background-dim.has-background-dim-100 {
   opacity: 1;
 }
-.wp-block-cover-image.alignleft, .wp-block-cover-image.alignright,
+.wp-block-cover-image.alignleft,
+.wp-block-cover-image.alignright,
 .wp-block-cover.alignleft,
 .wp-block-cover.alignright {
   max-width: 420px;
@@ -285,11 +411,13 @@
 }
 @supports (position: sticky) {
   .wp-block-cover-image::after,
-.wp-block-cover::after {
+  .wp-block-cover::after {
     content: none;
   }
 }
-.wp-block-cover-image.aligncenter, .wp-block-cover-image.alignleft, .wp-block-cover-image.alignright,
+.wp-block-cover-image.aligncenter,
+.wp-block-cover-image.alignleft,
+.wp-block-cover-image.alignright,
 .wp-block-cover.aligncenter,
 .wp-block-cover.alignleft,
 .wp-block-cover.alignright {
@@ -299,7 +427,8 @@
 .wp-block-cover .wp-block-cover__inner-container {
   width: 100%;
   z-index: 1;
-  color: #fff; direction: rtl;
+  color: #fff;
+  direction: rtl;
 }
 .wp-block-cover-image.is-light .wp-block-cover__inner-container,
 .wp-block-cover.is-light .wp-block-cover__inner-container {
@@ -366,8 +495,10 @@
   align-items: flex-end;
   justify-content: flex-end;
 }
-.wp-block-cover-image.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container,
-.wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
+.wp-block-cover-image.has-custom-content-position.has-custom-content-position
+  .wp-block-cover__inner-container,
+.wp-block-cover.has-custom-content-position.has-custom-content-position
+  .wp-block-cover__inner-container {
   margin: 0;
   width: auto;
 }
@@ -402,17 +533,17 @@ video.wp-block-cover__video-background.has-parallax {
 }
 @supports (-webkit-overflow-scrolling: touch) {
   .wp-block-cover-image.has-parallax,
-.wp-block-cover.has-parallax,
-.wp-block-cover__image-background.has-parallax,
-video.wp-block-cover__video-background.has-parallax {
+  .wp-block-cover.has-parallax,
+  .wp-block-cover__image-background.has-parallax,
+  video.wp-block-cover__video-background.has-parallax {
     background-attachment: scroll;
   }
 }
 @media (prefers-reduced-motion: reduce) {
   .wp-block-cover-image.has-parallax,
-.wp-block-cover.has-parallax,
-.wp-block-cover__image-background.has-parallax,
-video.wp-block-cover__video-background.has-parallax {
+  .wp-block-cover.has-parallax,
+  .wp-block-cover__image-background.has-parallax,
+  video.wp-block-cover__video-background.has-parallax {
     background-attachment: scroll;
   }
 }

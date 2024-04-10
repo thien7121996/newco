@@ -103,7 +103,8 @@
 .wp-block-social-links.has-small-icon-size {
   font-size: 16px;
 }
-.wp-block-social-links, .wp-block-social-links.has-normal-icon-size {
+.wp-block-social-links,
+.wp-block-social-links.has-normal-icon-size {
   font-size: 24px;
 }
 .wp-block-social-links.has-large-icon-size {
@@ -142,7 +143,14 @@
   transform: scale(1.1);
 }
 
-.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor, .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:hover, .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:active, .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:visited,
+.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor,
+.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:hover,
+.wp-block-social-links
+  .wp-block-social-link
+  .wp-block-social-link-anchor:active,
+.wp-block-social-links
+  .wp-block-social-link
+  .wp-block-social-link-anchor:visited,
 .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor svg {
   color: currentColor;
   fill: currentColor;
@@ -450,6 +458,6 @@
   width: auto;
 }
 .wp-block-social-links.is-style-pill-shape .wp-social-link a {
-  padding-right: calc((2/3) * 1em);
-  padding-left: calc((2/3) * 1em);
+  padding-right: calc((2 / 3) * 1em);
+  padding-left: calc((2 / 3) * 1em);
 }

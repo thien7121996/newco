@@ -99,19 +99,19 @@ ul.wp-block-rss.is-grid li {
 }
 @media (min-width: 600px) {
   ul.wp-block-rss.columns-2 li {
-    width: calc(( 100% / 2 ) - 1em);
+    width: calc((100% / 2) - 1em);
   }
   ul.wp-block-rss.columns-3 li {
-    width: calc(( 100% / 3 ) - 1em);
+    width: calc((100% / 3) - 1em);
   }
   ul.wp-block-rss.columns-4 li {
-    width: calc(( 100% / 4 ) - 1em);
+    width: calc((100% / 4) - 1em);
   }
   ul.wp-block-rss.columns-5 li {
-    width: calc(( 100% / 5 ) - 1em);
+    width: calc((100% / 5) - 1em);
   }
   ul.wp-block-rss.columns-6 li {
-    width: calc(( 100% / 6 ) - 1em);
+    width: calc((100% / 6) - 1em);
   }
 }
 

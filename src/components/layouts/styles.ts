@@ -9,10 +9,6 @@ export const LayoutWrapper = styled.div`
   position: absolute;
   height: 100%;
   width: 100%;
-
-  @media (max-width: ${MEDIA_QUERY.TABLET}) {
-    padding-top: 48px;
-  }
 `;
 
 export const LayoutPageWrapper = styled.div`

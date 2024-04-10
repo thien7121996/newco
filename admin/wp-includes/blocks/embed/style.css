@@ -74,15 +74,19 @@
 /**
  * Reset the WP Admin page styles for Gutenberg-like pages.
  */
-.wp-block[data-align=left] > [data-type="core/embed"],
-.wp-block[data-align=right] > [data-type="core/embed"],
+.wp-block[data-align="left"] > [data-type="core/embed"],
+.wp-block[data-align="right"] > [data-type="core/embed"],
 .wp-block-embed.alignleft,
 .wp-block-embed.alignright {
   max-width: 360px;
   width: 100%;
 }
-.wp-block[data-align=left] > [data-type="core/embed"] .wp-block-embed__wrapper,
-.wp-block[data-align=right] > [data-type="core/embed"] .wp-block-embed__wrapper,
+.wp-block[data-align="left"]
+  > [data-type="core/embed"]
+  .wp-block-embed__wrapper,
+.wp-block[data-align="right"]
+  > [data-type="core/embed"]
+  .wp-block-embed__wrapper,
 .wp-block-embed.alignleft .wp-block-embed__wrapper,
 .wp-block-embed.alignright .wp-block-embed__wrapper {
   min-width: 280px;

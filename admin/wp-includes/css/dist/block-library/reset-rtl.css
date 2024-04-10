@@ -94,7 +94,8 @@ html :where(.editor-styles-wrapper) {
 html :where(.editor-styles-wrapper) .wp-align-wrapper {
   max-width: 840px;
 }
-html :where(.editor-styles-wrapper) .wp-align-wrapper > .wp-block, html :where(.editor-styles-wrapper) .wp-align-wrapper.wp-align-full {
+html :where(.editor-styles-wrapper) .wp-align-wrapper > .wp-block,
+html :where(.editor-styles-wrapper) .wp-align-wrapper.wp-align-full {
   max-width: none;
 }
 html :where(.editor-styles-wrapper) .wp-align-wrapper.wp-align-wide {

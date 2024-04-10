@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import BackgroundDownload from "@/styles/assets/bgdownload.png";
+import { MEDIA_QUERY } from "@/utils/screenSize";
 
 export const DownloadWrapper = styled.div`
   display: flex;
@@ -13,6 +14,12 @@ export const DownloadWrapper = styled.div`
     url(${BackgroundDownload.src});
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-size: cover;
+
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    padding: 40px 24px;
+    gap: 32px;
+    height: auto;
+  }
 `;
 export const DownloadSection = styled.div`
   display: flex;
@@ -27,6 +34,12 @@ export const DownloadSection = styled.div`
     letter-spacing: -0.005em;
     margin: 0;
     color: ${({ theme }) => theme.colors.primary_0};
+    @media (max-width: ${MEDIA_QUERY.TABLET}) {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 48px;
+    }
   }
   p {
     font-weight: 400;

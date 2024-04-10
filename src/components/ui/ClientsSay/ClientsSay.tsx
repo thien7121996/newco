@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { ListReviews } from "./ListReviews/ListReviews";
 import { MoreGallery } from "./MoreGallery";
 import {
@@ -7,17 +8,21 @@ import {
   ClientsSaysSection,
   ClientsSaysWrapper,
 } from "./styles";
+import { useClientSayAnimation } from "./useClientSayAnimation";
 import { BlockSwiper } from "@/components/ui/BlockSwiper";
 
 export const ClientsSay = () => {
+  const clientSayRef = useRef<HTMLDivElement>(null);
+  useClientSayAnimation(clientSayRef);
+
   return (
-    <ClientsSaysWrapper>
+    <ClientsSaysWrapper ref={clientSayRef}>
       <ClientsSaysSection>
         <ClientsSayBlockLeft>
           <ClientsSayHeading>
-            WHAT’S OUR
+            <span className="client-say-title-1">WHAT’S OUR</span>
             <br />
-            CLIENTS -------- SAY
+            <span className="client-say-title-2">CLIENTS -------- SAY</span>
           </ClientsSayHeading>
 
           <ListReviews />

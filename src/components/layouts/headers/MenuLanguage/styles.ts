@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MEDIA_QUERY } from "@/utils/screenSize";
 
 export const ButtonWrapper = styled.button`
   border: none;
@@ -16,4 +17,8 @@ export const ButtonWrapper = styled.button`
   order: 0;
   flex-grow: 0;
   border-left: 1px solid #e0e0e0;
+
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    border: none;
+  }
 `;

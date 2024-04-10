@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MEDIA_QUERY } from "@/utils/screenSize";
 export const FlowOfUsWrapper = styled.div`
   display: block;
   max-width: 100%;
@@ -11,6 +12,9 @@ export const FlowOfUsSection = styled.div`
   width: 95%;
   margin: auto;
   gap: 55px;
+  @media (max-width: ${MEDIA_QUERY.EXTRA_DESKTOP}) {
+    flex-direction: column;
+  }
 `;
 export const FlowOfUsNumberList = styled.div`
   width: 70%;
@@ -18,6 +22,10 @@ export const FlowOfUsNumberList = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
+  @media (max-width: ${MEDIA_QUERY.EXTRA_DESKTOP}) {
+    width: 100%;
+    order: 1;
+  }
 `;
 export const FlowOfUsContent = styled.div`
   width: 28%;
@@ -27,6 +35,10 @@ export const FlowOfUsContent = styled.div`
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
+  @media (max-width: ${MEDIA_QUERY.EXTRA_DESKTOP}) {
+    width: 100%;
+    order: 0;
+  }
 `;
 export const FlowSubTitle = styled.h4`
   font-style: normal;

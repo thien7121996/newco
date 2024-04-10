@@ -112,10 +112,12 @@
   min-width: 150px;
   max-width: 500px;
 }
-.block-editor-format-toolbar__image-container-value.components-base-control .components-base-control__field {
+.block-editor-format-toolbar__image-container-value.components-base-control
+  .components-base-control__field {
   margin-bottom: 0;
 }
-.block-editor-format-toolbar__image-container-value.components-base-control .components-base-control__label {
+.block-editor-format-toolbar__image-container-value.components-base-control
+  .components-base-control__label {
   display: block;
 }
 
@@ -137,18 +139,26 @@
   color: #cc1818;
 }
 
-.components-inline-color-popover .components-popover__content .components-tab-panel__tab-content {
+.components-inline-color-popover
+  .components-popover__content
+  .components-tab-panel__tab-content {
   padding: 16px;
 }
-.components-inline-color-popover .components-popover__content .components-color-palette {
+.components-inline-color-popover
+  .components-popover__content
+  .components-color-palette {
   margin-top: 0.6rem;
 }
-.components-inline-color-popover .components-popover__content .components-base-control__title {
+.components-inline-color-popover
+  .components-popover__content
+  .components-base-control__title {
   display: block;
   margin-bottom: 16px;
   font-weight: 600;
   color: #191e23;
 }
-.components-inline-color-popover .components-popover__content .component-color-indicator {
+.components-inline-color-popover
+  .components-popover__content
+  .component-color-indicator {
   vertical-align: text-bottom;
 }

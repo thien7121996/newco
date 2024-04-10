@@ -98,7 +98,10 @@
   border-radius: 2em;
   padding: 0.5em 1em;
 }
-:where(.wp-block-file__button):is(a):hover, :where(.wp-block-file__button):is(a):visited, :where(.wp-block-file__button):is(a):focus, :where(.wp-block-file__button):is(a):active {
+:where(.wp-block-file__button):is(a):hover,
+:where(.wp-block-file__button):is(a):visited,
+:where(.wp-block-file__button):is(a):focus,
+:where(.wp-block-file__button):is(a):active {
   box-shadow: none;
   color: #fff;
   opacity: 0.85;

@@ -1,13 +1,20 @@
+import { useRef } from "react";
 import { ItemService } from "./ItemService/ItemService";
 import { ListServiceSection, ListServiceWrapper } from "./style";
+import { useAnimateServices } from "./useAnimateServices";
 import ImageService1 from "@/styles/assets/service-1.png";
 import ImageService2 from "@/styles/assets/service-2.png";
 import ImageService3 from "@/styles/assets/service-3.png";
 import ImageService4 from "@/styles/assets/service-4.png";
+
 export const ListService = () => {
+  const servicesListRef = useRef<HTMLDivElement>(null);
+
+  useAnimateServices(servicesListRef);
+
   return (
-    <ListServiceWrapper>
-      <ListServiceSection>
+    <ListServiceWrapper ref={servicesListRef}>
+      <ListServiceSection className="service-list-section">
         <ItemService
           title="Set Up"
           content="An all-in-one space with transparent rewards, roles, and discussion for any community."

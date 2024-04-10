@@ -1,14 +1,28 @@
 import styled from "styled-components";
+import { MEDIA_QUERY } from "@/utils/screenSize";
+
 export const ItemServiceSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
+  height: 0;
+  /* transform: scale(0); */
+  transform-origin: "top left";
+
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    width: 45%;
+  }
 `;
+
 export const ItemServiceImage = styled.div`
   width: 74.9px;
   height: 72px;
+  position: relative;
+  transform: scale(0);
+  transform-origin: top left;
+
   img {
     width: 100%;
     height: 100%;

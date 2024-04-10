@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MEDIA_QUERY } from "@/utils/screenSize";
 
 export const ListMenuFooter = styled.ul`
   display: flex;
@@ -14,7 +15,6 @@ export const ListMenuFooter = styled.ul`
 `;
 
 export const ItemMenu = styled.li`
-  width: 267.33px;
   height: 24px;
   font-style: normal;
   font-weight: 400;
@@ -38,5 +38,8 @@ export const ItemMenu = styled.li`
     align-self: stretch;
     flex-grow: 0;
     text-decoration: none;
+  }
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    text-align: center;
   }
 `;

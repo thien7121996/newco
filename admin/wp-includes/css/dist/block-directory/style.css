@@ -150,7 +150,8 @@
 .block-directory-downloadable-block-list-item.is-busy {
   background: transparent;
 }
-.block-directory-downloadable-block-list-item.is-busy .block-directory-downloadable-block-list-item__author {
+.block-directory-downloadable-block-list-item.is-busy
+  .block-directory-downloadable-block-list-item__author {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -162,7 +163,8 @@
   width: 1px;
   word-wrap: normal !important;
 }
-.block-directory-downloadable-block-list-item:disabled, .block-directory-downloadable-block-list-item[aria-disabled] {
+.block-directory-downloadable-block-list-item:disabled,
+.block-directory-downloadable-block-list-item[aria-disabled] {
   opacity: 1;
 }
 
@@ -171,7 +173,8 @@
   margin-right: 16px;
   align-self: flex-start;
 }
-.block-directory-downloadable-block-list-item__icon .block-directory-downloadable-block-list-item__spinner {
+.block-directory-downloadable-block-list-item__icon
+  .block-directory-downloadable-block-list-item__spinner {
   position: absolute;
   top: 0;
   right: 0;
@@ -228,7 +231,8 @@
   text-align: center;
   color: #757575;
 }
-.block-directory-downloadable-blocks-panel.has-blocks-loading .components-spinner {
+.block-directory-downloadable-blocks-panel.has-blocks-loading
+  .components-spinner {
   float: inherit;
 }
 

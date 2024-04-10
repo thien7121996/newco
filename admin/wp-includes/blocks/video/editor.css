@@ -74,7 +74,7 @@
 /**
  * Reset the WP Admin page styles for Gutenberg-like pages.
  */
-.wp-block[data-align=center] > .wp-block-video {
+.wp-block[data-align="center"] > .wp-block-video {
   text-align: center;
 }
 
@@ -114,10 +114,12 @@
   display: flex;
   margin-top: 12px;
 }
-.block-library-video-tracks-editor__single-track-editor-label-language > .components-base-control {
+.block-library-video-tracks-editor__single-track-editor-label-language
+  > .components-base-control {
   width: 50%;
 }
-.block-library-video-tracks-editor__single-track-editor-label-language > .components-base-control:first-child {
+.block-library-video-tracks-editor__single-track-editor-label-language
+  > .components-base-control:first-child {
   margin-right: 16px;
 }
 
@@ -147,7 +149,8 @@
 }
 
 .block-library-video-tracks-editor__track-list .components-menu-group__label,
-.block-library-video-tracks-editor__add-tracks-container .components-menu-group__label {
+.block-library-video-tracks-editor__add-tracks-container
+  .components-menu-group__label {
   padding: 0;
 }
 
@@ -157,15 +160,23 @@
   padding: 12px;
 }
 
-.block-library-video-tracks-editor__single-track-editor .components-base-control .components-base-control__label {
+.block-library-video-tracks-editor__single-track-editor
+  .components-base-control
+  .components-base-control__label {
   margin-bottom: 4px;
 }
-.block-library-video-tracks-editor__single-track-editor .components-base-control .components-base-control__field {
+.block-library-video-tracks-editor__single-track-editor
+  .components-base-control
+  .components-base-control__field {
   margin-bottom: 12px;
 }
-.block-library-video-tracks-editor__single-track-editor .components-base-control .components-text-control__input {
+.block-library-video-tracks-editor__single-track-editor
+  .components-base-control
+  .components-text-control__input {
   margin-left: 0;
 }
-.block-library-video-tracks-editor__single-track-editor .components-base-control .components-input-control__label {
+.block-library-video-tracks-editor__single-track-editor
+  .components-base-control
+  .components-input-control__label {
   margin-bottom: 4px;
 }

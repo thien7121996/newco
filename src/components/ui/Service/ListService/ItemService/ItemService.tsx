@@ -15,9 +15,9 @@ type Props = {
 
 export const ItemService: FC<Props> = ({ title, content, imageUrl }) => {
   return (
-    <ItemServiceSection>
-      <ItemServiceImage>
-        <Image src={imageUrl} alt="" width={75} height={72} />
+    <ItemServiceSection className="service-icon-section">
+      <ItemServiceImage className="service-icon">
+        <Image src={imageUrl} alt="service-icon" width={75} height={72} />
       </ItemServiceImage>
       <ItemServiceTitle>{title}</ItemServiceTitle>
       <ItemServiceContent>{content}</ItemServiceContent>

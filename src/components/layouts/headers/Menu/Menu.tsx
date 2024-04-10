@@ -1,22 +1,41 @@
-import { ItemMenu, MenuWrapper } from "./styles";
+import { useSetAtom } from "jotai";
+import { useCallback } from "react";
+import { ItemMenu, LinkItem, MenuWrapper } from "./styles";
+import { menuActiveStatus } from "@/components/layouts/headers/Header";
 
 export const Menu = () => {
+  const setMenuActive = useSetAtom(menuActiveStatus);
+
+  const closeMenu = useCallback(() => {
+    setMenuActive(false);
+  }, [setMenuActive]);
+
   return (
     <MenuWrapper>
-      <ItemMenu>
-        <a href="#">Home</a>
+      <ItemMenu className="home-menu">
+        <LinkItem onClick={closeMenu} href="/">
+          Home
+        </LinkItem>
       </ItemMenu>
-      <ItemMenu>
-        <a href="#">About Us</a>
+      <ItemMenu className="about-us-menu">
+        <LinkItem onClick={closeMenu} href="/">
+          About Us
+        </LinkItem>
       </ItemMenu>
-      <ItemMenu>
-        <a href="#">Service</a>
+      <ItemMenu className="service-menu">
+        <LinkItem onClick={closeMenu} href="/">
+          Service
+        </LinkItem>
       </ItemMenu>
-      <ItemMenu>
-        <a href="#">Our clients</a>
+      <ItemMenu className="our-clients-menu">
+        <LinkItem onClick={closeMenu} href="/our-clients">
+          Our clients
+        </LinkItem>
       </ItemMenu>
-      <ItemMenu>
-        <a href="#">Career and News</a>
+      <ItemMenu className="career-and-new-menu">
+        <LinkItem onClick={closeMenu} href="/career-and-news">
+          Career and News
+        </LinkItem>
       </ItemMenu>
     </MenuWrapper>
   );

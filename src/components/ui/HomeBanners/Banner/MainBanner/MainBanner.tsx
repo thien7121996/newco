@@ -1,27 +1,11 @@
-import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
 import ArrowIcon from "./assets/arrow-icon.svg";
-import MainBannerImage from "./assets/main-banner.png";
-import {
-  BackgroundWrapper,
-  Content,
-  MainBannerWrapper,
-  Slogan,
-  Title,
-} from "./styles";
+import { Content, MainBannerWrapper, Slogan, Title } from "./styles";
 import { Button } from "@/components/ui/Button";
 
-export const MainBanner = () => {
+export const MainBanner: FC = () => {
   return (
     <MainBannerWrapper>
-      <BackgroundWrapper>
-        <Image
-          src={MainBannerImage.src}
-          width={MainBannerImage.width}
-          height={MainBannerImage.height}
-          alt="main-banner"
-        />
-      </BackgroundWrapper>
       <Content>
         <Title>
           <span>CodeCraft:</span>

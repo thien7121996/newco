@@ -1,7 +1,8 @@
 import { CaseStudyWrapper, CaseStudySection, CaseStudyList } from "./styles";
 import { BlockHeading } from "@/components/ui/BlockHeading";
 import { NewItem } from "@/components/ui/NewItem";
-import PostThumbnail from "@/styles/assets/post-thumbnail.png";
+import Blog1 from "@/styles/assets/blog1.png";
+import Blog2 from "@/styles/assets/blog2.png";
 export const CaseStudy = () => {
   return (
     <CaseStudyWrapper>
@@ -9,13 +10,13 @@ export const CaseStudy = () => {
         <CaseStudyList>
           <NewItem
             title="プロダクト開発の実績"
-            thumbnailUrl={PostThumbnail.src}
+            thumbnailUrl={Blog1.src}
             content="あらゆる産業のデジタライゼーションを促進し、社会をアップデートするための価値創造を実現"
             textButton="See More"
           />
           <NewItem
             title="プロダクト開発の実績"
-            thumbnailUrl={PostThumbnail.src}
+            thumbnailUrl={Blog2.src}
             content="あらゆる産業のデジタライゼーションを促進し、社会をアップデートするための価値創造を実現"
             textButton="See More"
           />

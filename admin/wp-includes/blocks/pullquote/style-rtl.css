@@ -86,7 +86,8 @@
 .wp-block-pullquote cite {
   color: inherit;
 }
-.wp-block-pullquote.alignleft, .wp-block-pullquote.alignright {
+.wp-block-pullquote.alignleft,
+.wp-block-pullquote.alignright {
   max-width: 420px;
 }
 .wp-block-pullquote cite,

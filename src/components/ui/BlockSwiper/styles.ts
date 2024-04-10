@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MEDIA_QUERY } from "@/utils/screenSize";
 export const SwiperItemWrapper = styled.div`
   display: flex;
   gap: 16px;
@@ -64,6 +65,10 @@ export const SwiperItemButton = styled.button`
       object-fit: contain;
     }
   }
+
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    margin: 0px !important;
+  }
 `;
 export const SwiperWrapper = styled.div``;
 export const LabelActive = styled.span`
@@ -116,6 +121,13 @@ export const SwiperControl = styled.div`
   position: relative;
   width: 20%;
   height: 96px;
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+  }
 `;
 export const SwiperArrow = styled.button`
   display: flex;
@@ -144,4 +156,9 @@ export const BlockSwiperSection = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 32px;
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 `;

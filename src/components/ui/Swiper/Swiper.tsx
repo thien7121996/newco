@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { FC, PropsWithChildren, ReactNode } from "react";
 import {
   Autoplay,
   Controller,
@@ -21,33 +21,44 @@ type Props = {
   onSwiper?: (swiper: SwiperType) => void;
 };
 
-export const SwiperSlider: FC<Props> = ({
+export const SwiperSlider: FC<PropsWithChildren<Props>> = ({
   banners,
   customNavigation,
   config,
   onSwiper,
+  children,
 }) => {
   if (!banners?.length) {
     return null;
   }
 
   const defaultConfig = {
-    autoplay: { delay: 3000, disableOnInteraction: false },
+    autoplay: { delay: 5000, disableOnInteraction: false, else: "ease-out" },
     mousewheel: { releaseOnEdges: true },
-    modules: [Controller, Autoplay, Navigation, EffectCoverflow],
     controller: { inverse: true },
     slidesPerView: 1,
     spaceBetween: 0,
     freeMode: true,
-    speed: 1000,
+    speed: 2500,
+    parallax: true,
+    centeredSlides: true,
     ...config,
+    modules: [
+      Controller,
+      Autoplay,
+      Navigation,
+      EffectCoverflow,
+      ...(config?.modules ?? []),
+    ],
   };
 
   return (
-    <Swiper {...defaultConfig} onSwiper={onSwiper}>
+    <Swiper {...defaultConfig} effect="fade" onSwiper={onSwiper}>
       {banners.map((banner) => (
         <SwiperSlide key={banner.id}>{banner.children}</SwiperSlide>
       ))}
+
+      {children}
       {customNavigation && (
         <CustomNavigationWrapper>{customNavigation}</CustomNavigationWrapper>
       )}

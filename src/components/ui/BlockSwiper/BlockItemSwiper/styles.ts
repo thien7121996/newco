@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MEDIA_QUERY } from "@/utils/screenSize";
 
 export const SwiperItemWrapper = styled.div`
   display: flex;
@@ -64,6 +65,10 @@ export const SwiperItemButton = styled.button`
       height: 24;
       object-fit: contain;
     }
+  }
+
+  @media (max-width: ${MEDIA_QUERY.TABLET}) {
+    margin: 0px !important;
   }
 `;
 export const SwiperWrapper = styled.div``;

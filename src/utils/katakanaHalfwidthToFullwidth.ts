@@ -1,6 +1,6 @@
 export const katakanaHalfwidthToFullwidth = (str?: string) => {
-	if (!str) {
-		return '';
-	}
-	return str.normalize('NFKC');
+  if (!str) {
+    return "";
+  }
+  return str.normalize("NFKC");
 };

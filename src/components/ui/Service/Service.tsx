@@ -7,6 +7,7 @@ import {
   ServiceListSection,
   ServiceSection,
   ServiceWrapper,
+  StyledServiceListWrapper,
 } from "./styles";
 import { BlockHeading } from "@/components/ui/BlockHeading";
 import ImageService from "@/styles/assets/image-service.png";
@@ -31,9 +32,22 @@ export const Service = () => {
           </ServiceLabel>
         </ServiceContent>
       </ServiceSection>
-      <ServiceListSection>
-        <ListService />
-      </ServiceListSection>
+      <StyledServiceListWrapper>
+        <ServiceListSection>
+          <ServiceContent>
+            <BlockHeading
+              subTitle="STATISTICS"
+              title="Service"
+              content="Your attention and consideration will lead the Republic of Korea It creates a space of shining intelligence."
+              textButton="Learn More"
+            />
+            <ServiceLabel>
+              <Image src={LabelService.src} alt="" width={88} height={107} />
+            </ServiceLabel>
+          </ServiceContent>
+          <ListService />
+        </ServiceListSection>
+      </StyledServiceListWrapper>
     </ServiceWrapper>
   );
 };

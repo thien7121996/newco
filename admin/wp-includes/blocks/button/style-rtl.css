@@ -95,7 +95,7 @@
   padding: calc(0.667em + 2px) calc(1.333em + 2px);
 }
 
-.wp-block-button[style*=text-decoration] .wp-block-button__link {
+.wp-block-button[style*="text-decoration"] .wp-block-button__link {
   text-decoration: inherit;
 }
 
@@ -105,7 +105,9 @@
 .wp-block-buttons > .wp-block-button.has-custom-width .wp-block-button__link {
   width: 100%;
 }
-.wp-block-buttons > .wp-block-button.has-custom-font-size .wp-block-button__link {
+.wp-block-buttons
+  > .wp-block-button.has-custom-font-size
+  .wp-block-button__link {
   font-size: inherit;
 }
 .wp-block-buttons > .wp-block-button.wp-block-button__width-25 {

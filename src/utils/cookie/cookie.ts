@@ -1,6 +1,6 @@
-import Cookies, { CookieAttributes } from 'js-cookie';
-import { Cookie } from './constants';
-import configs from '@/configs';
+import Cookies, { CookieAttributes } from "js-cookie";
+import { Cookie } from "./constants";
+import configs from "@/configs";
 
 const domain = configs.cookie.domain;
 
@@ -11,19 +11,19 @@ const domain = configs.cookie.domain;
  * @param options - cookie options
  */
 export function setCookie(
-	cookie: Cookie,
-	value: string | object,
-	options?: Pick<CookieAttributes, 'expires'>
+  cookie: Cookie,
+  value: string | object,
+  options?: Pick<CookieAttributes, "expires">,
 ) {
-	if (typeof value === 'string') {
-		Cookies.set(cookie.name, value, { domain, ...cookie.options, ...options });
-	} else {
-		Cookies.set(cookie.name, JSON.stringify(value), {
-			domain,
-			...cookie.options,
-			...options,
-		});
-	}
+  if (typeof value === "string") {
+    Cookies.set(cookie.name, value, { domain, ...cookie.options, ...options });
+  } else {
+    Cookies.set(cookie.name, JSON.stringify(value), {
+      domain,
+      ...cookie.options,
+      ...options,
+    });
+  }
 }
 
 /**
@@ -32,7 +32,7 @@ export function setCookie(
  * @returns cookie value
  */
 export function getCookie(cookie: Cookie) {
-	return Cookies.get(cookie.name);
+  return Cookies.get(cookie.name);
 }
 
 /**
@@ -40,5 +40,5 @@ export function getCookie(cookie: Cookie) {
  * @param cookie - cookie constants
  */
 export function removeCookie(cookie: Cookie) {
-	Cookies.remove(cookie.name);
+  Cookies.remove(cookie.name);
 }

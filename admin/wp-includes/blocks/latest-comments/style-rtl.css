@@ -91,11 +91,16 @@ ol.wp-block-latest-comments {
   min-height: 2.25em;
   list-style: none;
 }
-.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta,
-.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt {
+.has-avatars
+  .wp-block-latest-comments__comment
+  .wp-block-latest-comments__comment-meta,
+.has-avatars
+  .wp-block-latest-comments__comment
+  .wp-block-latest-comments__comment-excerpt {
   margin-right: 3.25em;
 }
-.has-dates .wp-block-latest-comments__comment, .has-excerpts .wp-block-latest-comments__comment {
+.has-dates .wp-block-latest-comments__comment,
+.has-excerpts .wp-block-latest-comments__comment {
   line-height: 1.5;
 }
 
