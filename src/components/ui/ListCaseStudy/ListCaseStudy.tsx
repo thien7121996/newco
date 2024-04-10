@@ -5,9 +5,9 @@ import {
   HeadingSection,
 } from "./styles";
 import { NewItem } from "@/components/ui/NewItem";
-import Blog2 from "@/styles/assets/Blog2.png";
-import Blog3 from "@/styles/assets/Blog3.png";
 import Blog1 from "@/styles/assets/blog1.png";
+import Blog2 from "@/styles/assets/blog2.png";
+import Blog3 from "@/styles/assets/blog3.png";
 import PostThumbnail from "@/styles/assets/post-thumbnail.png";
 export const ListCaseStudy = () => {
   return (
