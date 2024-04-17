@@ -15,7 +15,7 @@ export const CareerNews = () => {
   return (
     <CareerNewsWrapper>
       <CareerNewsSection>
-        <CareerNewsHeading>CARRER AND NEWS</CareerNewsHeading>
+        <CareerNewsHeading>CAREER AND NEWS</CareerNewsHeading>
         <CareerNewsListBlog>
           <BlogItem
             title="プレスリリース"

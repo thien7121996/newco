@@ -32,7 +32,7 @@ export const FlowOfUs: FC = () => {
         </FlowOfUsNumberList>
         <BlockHeading
           subTitle="STATISTICS"
-          title="FLOW OF USES"
+          title="FLOW OF USAGE"
           content="
             Your attention and consideration will lead the Republic of
             <br /> Korea It creates a space of shining intelligence."
