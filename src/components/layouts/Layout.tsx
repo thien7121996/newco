@@ -1,9 +1,4 @@
 "use client";
-import { useGSAP } from "@gsap/react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { ScrollSmoother } from "gsap-trial/dist/ScrollSmoother";
-import { SplitText } from "gsap-trial/dist/SplitText";
 import { atom, useAtom } from "jotai";
 import { debounce } from "lodash";
 import React, { FC, PropsWithChildren, useCallback, useRef } from "react";
@@ -20,8 +15,6 @@ import "swiper/css/bundle";
 import "@/styles/globals.css";
 
 export const headerHeightInit = atom(70);
-
-gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother, useGSAP);
 
 type Props = {
   isMobile: boolean;

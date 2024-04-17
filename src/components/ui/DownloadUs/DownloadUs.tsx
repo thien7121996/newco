@@ -6,7 +6,6 @@ import {
   ButtonDownload,
   BackgroundWrapper,
 } from "./styles";
-import { useBloatTextAnimation } from "@/hooks/useBloatTextAnimation.hooks";
 import BackgroundDownload from "@/styles/assets/bgdownload.png";
 import ImportLogo from "@/styles/assets/import.png";
 
@@ -14,18 +13,6 @@ export const DownloadUs = () => {
   const scopeRef = useRef<HTMLDivElement>(null);
   const titleTargetRef = useRef<HTMLParagraphElement>(null);
   const sloganTargetRef = useRef<HTMLParagraphElement>(null);
-
-  useBloatTextAnimation(scopeRef, titleTargetRef, {
-    delay: 0,
-    duration: 1,
-    type: "lines",
-  });
-
-  useBloatTextAnimation(scopeRef, sloganTargetRef, {
-    delay: 1,
-    duration: 1,
-    type: "lines",
-  });
 
   return (
     <DownloadWrapper ref={scopeRef}>
