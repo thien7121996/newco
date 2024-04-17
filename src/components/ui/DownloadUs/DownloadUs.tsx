@@ -26,10 +26,8 @@ export const DownloadUs = () => {
         />
       </BackgroundWrapper>
       <DownloadSection>
-        <h3 ref={titleTargetRef} className="about-us_title">
-          {"Let's Make it Happen Together!"}
-        </h3>
-        <p ref={sloganTargetRef}>
+        <h3 className="about-us_title">{"Let's Make it Happen Together!"}</h3>
+        <p>
           Use our API to connect to your supply chain and start testirg with
           your partners immediately.
         </p>

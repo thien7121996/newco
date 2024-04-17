@@ -43,6 +43,7 @@ export const DownloadSection = styled.div`
   gap: 16px;
   h3 {
     font-style: normal;
+    position: relative;
     font-weight: 800;
     font-size: 48px;
     line-height: 45px;
@@ -59,6 +60,7 @@ export const DownloadSection = styled.div`
   }
   p {
     font-weight: 400;
+    position: relative;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
