@@ -1,3 +1,4 @@
+"use client";
 import styled from "styled-components";
 import BackgroundDownload from "@/styles/assets/bgdownload.png";
 import { MEDIA_QUERY } from "@/utils/screenSize";
@@ -7,13 +8,14 @@ export const DownloadWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 96px;
+  padding: 175px 96px;
   gap: 32px;
-  height: 416px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
-    url(${BackgroundDownload.src});
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-size: cover;
+  position: relative;
+  /* height: 416px; */
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+    url(${BackgroundDownload.src}); */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  /* background-size: cover; */
 
   @media (max-width: ${MEDIA_QUERY.TABLET}) {
     padding: 40px 24px;
@@ -21,6 +23,20 @@ export const DownloadWrapper = styled.div`
     height: auto;
   }
 `;
+
+export const BackgroundWrapper = styled.div`
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  img {
+    object-fit: cover;
+    height: 102%;
+  }
+`;
+
 export const DownloadSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -59,7 +75,7 @@ export const ButtonDownload = styled.button`
   padding: 12px 16px;
   gap: 10px;
   background: transparent;
-  color: #fff
+  color: #fff;
   justify-content: space-arround;
 
   width: 253px;
@@ -67,6 +83,7 @@ export const ButtonDownload = styled.button`
   border: 1px solid ${({ theme }) => theme.colors.secondary_100};
   border-radius: 4px;
   margin: auto;
+  z-index: 1;
 
   > span {
     width: 187px;
@@ -75,7 +92,7 @@ export const ButtonDownload = styled.button`
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.0125em;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: left;
   }
 `;

@@ -1,3 +1,4 @@
+"use client";
 import {
   CareerAndNewsSection,
   CareerAndNewsWrapper,
@@ -19,7 +20,6 @@ export const CareerAndNews = () => {
               title="プロダクト開発の実績"
               thumbnailUrl={Blog1.src}
               content="あらゆる産業のデジタライゼーションを促進し、社会をアップデートするための価値創造を実現"
-              textButton="See More"
             />
           </ColumnCareerNews>
           <ColumnCareerNews>
@@ -27,21 +27,18 @@ export const CareerAndNews = () => {
               title="プロダクト開発の実績"
               thumbnailUrl={Blog1.src}
               content="あらゆる産業のデジタライゼーションを促進し、社会をアップデートするための価値創造を実現"
-              textButton="See More"
               stylePost="horizontal"
             />
             <PostItem
               title="プロダクト開発の実績"
               thumbnailUrl={Blog2.src}
               content="あらゆる産業のデジタライゼーションを促進し、社会をアップデートするための価値創造を実現"
-              textButton="See More"
               stylePost="horizontal"
             />
             <PostItem
               title="プロダクト開発の実績"
               thumbnailUrl={Blog3.src}
               content="あらゆる産業のデジタライゼーションを促進し、社会をアップデートするための価値創造を実現"
-              textButton="See More"
               stylePost="horizontal"
             />
           </ColumnCareerNews>

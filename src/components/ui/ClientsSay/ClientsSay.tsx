@@ -1,3 +1,4 @@
+"use client";
 import { useRef } from "react";
 import { ListReviews } from "./ListReviews/ListReviews";
 import { MoreGallery } from "./MoreGallery";

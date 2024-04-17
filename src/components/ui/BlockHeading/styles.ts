@@ -1,12 +1,5 @@
+"use client";
 import styled from "styled-components";
-export const BlockHeadingContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 16px;
-`;
 export const BlockHeadingSubTitle = styled.h4`
   font-style: normal;
   font-weight: 700;
@@ -34,6 +27,10 @@ export const BlockHeadingDescription = styled.p`
   align-items: flex-end;
   letter-spacing: 0.004em;
   color: #777e90;
+
+  & p {
+    color: #000;
+  }
 `;
 export const BlockHeadingButton = styled.button`
   box-sizing: border-box;
@@ -52,4 +49,39 @@ export const BlockHeadingButton = styled.button`
   background: #ffffff;
   color: #141416;
   font-weight: 700;
+  cursor: pointer;
+`;
+
+export const BlockHeadingContent = styled.div<{
+  align?: "center" | "left" | "right";
+}>`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  ${({ align }) => {
+    if (align === "center") {
+      return `
+        align-items: center;
+        text-align: center;
+      `;
+    }
+
+    if (align === "right") {
+      return `
+        align-items: flex-end;
+        text-align: right;
+      `;
+    }
+
+    if (align === "left") {
+      return `
+        align-items: flex-start;
+        text-align: left;
+      `;
+    }
+  }}
 `;

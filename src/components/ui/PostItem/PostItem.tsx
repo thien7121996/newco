@@ -18,9 +18,9 @@ type Props = {
   title: string;
   thumbnailUrl: string;
   content: string;
-  textButton: string;
   stylePost?: "vertical" | "horizontal";
 };
+
 export const PostItem: FC<Props> = ({
   title,
   thumbnailUrl,
@@ -28,7 +28,7 @@ export const PostItem: FC<Props> = ({
   stylePost,
 }) => {
   return (
-    <PostItemWrapper>
+    <PostItemWrapper className="over">
       <PostItemSection type={stylePost ?? "vertical"}>
         <PostItemThumbnail>
           <Image src={thumbnailUrl} alt="" width={392} height={250} />

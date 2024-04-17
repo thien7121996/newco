@@ -1,3 +1,4 @@
+"use client";
 import { CaseStudyWrapper, CaseStudySection, CaseStudyList } from "./styles";
 import { BlockHeading } from "@/components/ui/BlockHeading";
 import { NewItem } from "@/components/ui/NewItem";

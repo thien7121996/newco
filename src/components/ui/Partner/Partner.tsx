@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React, { useMemo } from "react";
 import AIcon from "./assets/a.svg";

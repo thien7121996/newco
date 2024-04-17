@@ -1,3 +1,4 @@
+"use client";
 import styled from "styled-components";
 import { MEDIA_QUERY } from "@/utils/screenSize";
 export const FlowOfUsWrapper = styled.div`

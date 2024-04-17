@@ -1,3 +1,4 @@
+"use client";
 import { useAtom } from "jotai";
 import React, { FC, useEffect, useState } from "react";
 import { Swiper } from "swiper/types";

@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
+import { useRef } from "react";
 import { ListService } from "./ListService/ListService";
+import { useAnimateServices } from "./ListService/useAnimateServices";
 import {
   ServiceContent,
   ServiceImage,
@@ -14,6 +17,10 @@ import ImageService from "@/styles/assets/image-service.png";
 import LabelService from "@/styles/assets/union-label.png";
 
 export const Service = () => {
+  const servicesListRef = useRef<HTMLDivElement>(null);
+
+  useAnimateServices(servicesListRef);
+
   return (
     <ServiceWrapper>
       <ServiceSection>
@@ -23,7 +30,7 @@ export const Service = () => {
         <ServiceContent>
           <BlockHeading
             subTitle="STATISTICS"
-            title="Service"
+            title="SERVICE"
             content="Your attention and consideration will lead the Republic of Korea It creates a space of shining intelligence."
             textButton="Learn More"
           />
@@ -32,8 +39,8 @@ export const Service = () => {
           </ServiceLabel>
         </ServiceContent>
       </ServiceSection>
-      <StyledServiceListWrapper>
-        <ServiceListSection>
+      <StyledServiceListWrapper ref={servicesListRef}>
+        <ServiceListSection className="service-list-section">
           <ServiceContent>
             <BlockHeading
               subTitle="STATISTICS"

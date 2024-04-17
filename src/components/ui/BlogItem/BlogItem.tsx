@@ -19,7 +19,7 @@ type props = {
 
 export const BlogItem: FC<props> = ({ label, title, description, date }) => {
   return (
-    <BlogItemSection>
+    <BlogItemSection className="over">
       <BlogContent>
         <BlogLabel>{label}</BlogLabel>
         <BlogTitle>{title}</BlogTitle>

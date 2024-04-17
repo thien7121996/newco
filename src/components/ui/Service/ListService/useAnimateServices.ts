@@ -10,7 +10,7 @@ export const useAnimateServices = (
   const animateServices = contextSafe(() => {
     const scrollTrigger = {
       trigger: ".service-icon-section",
-      start: "bottom 105%-=400px",
+      start: "bottom 105%-=300px",
       end: "+=500",
     };
 
@@ -19,7 +19,8 @@ export const useAnimateServices = (
     tl.fromTo(
       ".service-list-section",
       {
-        skewY: 20,
+        overflow: "hidden",
+        transformOrigin: "top right",
         height: 0,
         maxHeight: 0,
         duration: 0.45,
@@ -29,7 +30,7 @@ export const useAnimateServices = (
         ease: "ease-out",
       },
       {
-        skewY: 0,
+        overflow: "visible",
         height: 224,
         maxHeight: 224,
         duration: 0.55,
@@ -43,16 +44,21 @@ export const useAnimateServices = (
       ease: "ease-in",
     });
 
-    gsap.to(".service-icon", {
-      transform: "scale(1)",
-      duration: 0.25,
-      stagger: {
-        amount: 0.3,
+    gsap.fromTo(
+      ".service-icon",
+      { skew: 30 },
+      {
+        transform: "scale(1)",
+        skew: 0,
+        duration: 0.2,
+        stagger: {
+          amount: 0.35,
+        },
+        ease: "ease-in",
+        delay: 0.2,
+        scrollTrigger,
       },
-      ease: "ease-in",
-      delay: 0.2,
-      scrollTrigger,
-    });
+    );
 
     tl.timeScale(1.25);
   });

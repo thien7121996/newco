@@ -1,3 +1,4 @@
+"use client";
 import styled from "styled-components";
 
 export const MainBannerWrapper = styled.div`

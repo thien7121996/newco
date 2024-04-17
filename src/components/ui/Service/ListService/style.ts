@@ -3,6 +3,8 @@ import { MEDIA_QUERY } from "@/utils/screenSize";
 export const ListServiceWrapper = styled.div`
   background: #ffffff;
   box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
+  overflow: hidden;
+
   @media (max-width: ${MEDIA_QUERY.TABLET}) {
     box-shadow: unset;
   }

@@ -1,3 +1,4 @@
+"use client";
 import {
   ListCaseStudySection,
   ListCaseStudyWrapper,
@@ -9,6 +10,7 @@ import Blog1 from "@/styles/assets/blog1.png";
 import Blog2 from "@/styles/assets/blog2.png";
 import Blog3 from "@/styles/assets/blog3.png";
 import PostThumbnail from "@/styles/assets/post-thumbnail.png";
+
 export const ListCaseStudy = () => {
   return (
     <ListCaseStudyWrapper>

@@ -1,24 +1,27 @@
 {
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"workbench.editor.wrapTabs": true,
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.codeActionsOnSave": {
-		"source.fixAll": "explicit"
-	},
-	"eslint.validate": [
-		"javascript",
-		"javascriptreact",
-		"typescript",
-		"typescriptreact",
-		"html"
-	],
-	"debug.javascript.autoAttachFilter": "onlyWithFlag",
-	"i18n-ally.localesPaths": ["src/locales"],
-	"git.mergeEditor": true,
-	"merge-conflict.autoNavigateNextConflict.enabled": true,
-	"commentTranslate.hover.enabled": true
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editor.wrapTabs": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html"
+  ],
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  "i18n-ally.localesPaths": ["src/locales"],
+  "git.mergeEditor": true,
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "commentTranslate.hover.enabled": true,
+  "[sass]": {
+    "editor.defaultFormatter": "syler.sass-indented"
+  }
 }

@@ -1,3 +1,4 @@
+"use client";
 import styled from "styled-components";
 import BGClient from "@/styles/assets/bg-client.png";
 import { MEDIA_QUERY } from "@/utils/screenSize";
@@ -27,6 +28,7 @@ export const BannerWrapper = styled.div`
     width: 100%;
   }
 `;
+
 export const SectionBG = styled.div`
   background: url(${BGClient.src}) no-repeat;
   background-position: bottom right;

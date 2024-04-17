@@ -1,7 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import { SectionBG } from "./styles";
 import { AboutUs } from "@/components/ui/AboutUs";
-import { CarrerNews } from "@/components/ui/CarrerNews";
+import { CareerNews } from "@/components/ui/CareerNews";
 import { CaseStudy } from "@/components/ui/CaseStudy/CaseStudy";
 import { ClientsSay } from "@/components/ui/ClientsSay";
 import { FlowOfUs } from "@/components/ui/FlowOfUs/FlowOfUs";
@@ -12,16 +11,18 @@ import { Service } from "@/components/ui/Service";
 export const Home = () => {
   return (
     <div className="home-page">
-      <HomeBanners />
-      <AboutUs />
-      <SectionBG>
-        <Service />
-        <CaseStudy />
-        <ClientsSay />
-      </SectionBG>
-      <Partner />
-      <CarrerNews />
-      <FlowOfUs />
+      <div>
+        <HomeBanners />
+        <AboutUs />
+        <SectionBG>
+          <Service />
+          <CaseStudy />
+          <ClientsSay />
+        </SectionBG>
+        <Partner />
+        <CareerNews />
+        <FlowOfUs />
+      </div>
     </div>
   );
 };

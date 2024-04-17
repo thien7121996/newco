@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import {
   AboutUsBlockLeft,
@@ -22,7 +23,13 @@ export const AboutUs = () => {
           />
         </AboutUsBlockLeft>
         <AboutUsBlockMiddle className="about-us-middle">
-          <Image src={ImageAbout.src} alt="About Us" width={368} height={463} />
+          <Image
+            src={ImageAbout.src}
+            className="over"
+            alt="About Us"
+            width={368}
+            height={463}
+          />
         </AboutUsBlockMiddle>
         <AboutUsBlockRight className="about-us-right">
           <BlockSwiper />

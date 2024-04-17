@@ -1,24 +1,29 @@
 import { useSetAtom } from "jotai";
-import { useCallback } from "react";
+import { useCallback, useRef } from "react";
 import { ItemMenu, LinkItem, MenuWrapper } from "./styles";
+import { useShowNavbar } from "./useShowNavbar";
 import { menuActiveStatus } from "@/components/layouts/headers/Header";
 
 export const Menu = () => {
+  const scopeRef = useRef<HTMLUListElement>(null);
+
   const setMenuActive = useSetAtom(menuActiveStatus);
+
+  useShowNavbar(scopeRef);
 
   const closeMenu = useCallback(() => {
     setMenuActive(false);
   }, [setMenuActive]);
 
   return (
-    <MenuWrapper>
+    <MenuWrapper ref={scopeRef}>
       <ItemMenu className="home-menu">
         <LinkItem onClick={closeMenu} href="/">
           Home
         </LinkItem>
       </ItemMenu>
       <ItemMenu className="about-us-menu">
-        <LinkItem onClick={closeMenu} href="/">
+        <LinkItem onClick={closeMenu} href="/about-us">
           About Us
         </LinkItem>
       </ItemMenu>

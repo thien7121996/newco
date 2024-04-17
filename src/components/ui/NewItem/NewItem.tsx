@@ -27,7 +27,7 @@ export const NewItem: FC<Props> = ({
     <NewItemWrapper>
       <NewItemSection>
         <NewItemTitle>{title}</NewItemTitle>
-        <NewItemThumbnail>
+        <NewItemThumbnail className="over">
           <Image src={thumbnailUrl} alt="" width={392} height={250} />
         </NewItemThumbnail>
         <NewItemDescription>{content}</NewItemDescription>

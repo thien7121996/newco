@@ -1,3 +1,4 @@
+"use client";
 import styled from "styled-components";
 import VectorFlow from "@/styles/assets/red-after.png";
 export const FlowBlockSection = styled.div`

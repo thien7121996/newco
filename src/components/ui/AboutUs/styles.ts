@@ -1,3 +1,4 @@
+"use client";
 import styled from "styled-components";
 import BGAboutUs from "@/styles/assets/bg-abouus.png";
 import { MEDIA_QUERY } from "@/utils/screenSize";

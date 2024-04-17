@@ -109,3 +109,35 @@ ul {
 button {
   font-family: "Aeonik Pro", sans-serif;
 }
+
+.over {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.over:hover {
+  -webkit-transform: translate(-15px, -15px);
+  transform: translate(-15px, -15px);
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  box-shadow: 10px 10px 0px 0px rgba(216, 0, 39, 0.75);
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(216, 0, 39, 0.75);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(216, 0, 39, 0.75);
+
+  border: 1px solid #f1f1f1 !important;
+}
+
+.boxover {
+  width: 269.72px;
+  -ms-flex-preferred-size: 366px;
+  flex-basis: 366px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(20%, #f93),
+    color-stop(80%, #ff7166)
+  );
+  background: linear-gradient(90deg, #f93 20%, #ff7166 80%);
+  height: 323px;
+}

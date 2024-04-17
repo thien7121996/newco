@@ -1,3 +1,4 @@
+"use client";
 import { atom, useSetAtom } from "jotai";
 import Image from "next/image";
 import React, { useCallback, useMemo } from "react";

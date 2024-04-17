@@ -1,1 +1,0 @@
-export { CarrerNews } from "./CarrerNews";

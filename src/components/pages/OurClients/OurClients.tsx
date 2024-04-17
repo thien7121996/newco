@@ -1,3 +1,4 @@
+"use client";
 import { OurClientsSection, OurClientsWraper } from "./styles";
 import { ListCaseStudy } from "@/components/ui/ListCaseStudy";
 import { ListReviewClients } from "@/components/ui/ListReviewClients/LisReviewClients";

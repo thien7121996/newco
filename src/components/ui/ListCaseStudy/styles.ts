@@ -1,3 +1,4 @@
+"use client";
 import styled from "styled-components";
 import { NewItemWrapper } from "@/components/ui/NewItem/styles";
 
