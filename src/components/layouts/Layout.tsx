@@ -6,7 +6,6 @@ import { Footer } from "./footers";
 import { Header } from "./headers";
 import { LayoutWrapper, LayoutPageWrapper } from "./styles";
 import { DownloadUs } from "@/components/ui/DownloadUs";
-import { useSmootherScroll } from "@/hooks/useSmootherScroll.hooks";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
@@ -28,8 +27,6 @@ export const Layout: FC<PropsWithChildren<Props>> = ({
   const bodyRef = useRef<HTMLDivElement>(null);
 
   const [headerHeight, setHeaderHeight] = useAtom(headerHeightInit);
-
-  useSmootherScroll(bodyRef);
 
   const handleSetHeaderHeight = useCallback(
     (height: number) => {
