@@ -30,7 +30,7 @@ export const Service = () => {
         <ServiceContent>
           <BlockHeading
             subTitle="STATISTICS"
-            title="SERVICE"
+            title="SERVICES"
             content="Your attention and consideration will lead the Republic of Korea It creates a space of shining intelligence."
             textButton="Learn More"
           />

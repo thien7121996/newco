@@ -121,9 +121,9 @@ button {
   transform: translate(-15px, -15px);
   -webkit-transition: 200ms;
   transition: 200ms;
-  box-shadow: 10px 10px 0px 0px #14141663;
-  -webkit-box-shadow: 10px 10px 0px 0px #14141663;
-  -moz-box-shadow: 10px 10px 0px 0px #14141663;
+  box-shadow: 10px 10px 0px 0px #d80027;
+  -webkit-box-shadow: 10px 10px 0px 0px #d80027;
+  -moz-box-shadow: 10px 10px 0px 0px #d80027;
   border: 1px solid #f1f1f1 !important;
 }
 

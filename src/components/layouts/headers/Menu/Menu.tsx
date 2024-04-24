@@ -29,22 +29,22 @@ export const Menu = () => {
       </ItemMenu>
       <ItemMenu className="service-menu">
         <LinkItem onClick={closeMenu} href="/service">
-          Service
+          Services
         </LinkItem>
       </ItemMenu>
       <ItemMenu className="our-clients-menu">
         <LinkItem onClick={closeMenu} href="/our-clients">
-          Our clients
+          Case Study
         </LinkItem>
       </ItemMenu>
       <ItemMenu className="career-and-new-menu">
         <LinkItem onClick={closeMenu} href="/career-and-news">
-          Career and news
+          Career And News
         </LinkItem>
       </ItemMenu>
       <ItemMenu className="career-and-new-menu">
         <LinkItem onClick={closeMenu} href="/contact-us">
-          Contact us
+          Contact Us
         </LinkItem>
       </ItemMenu>
     </MenuWrapper>
