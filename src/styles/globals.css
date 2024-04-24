@@ -78,7 +78,7 @@
 
 /* Apply full-width style to Katakana text */
 body {
-  font-family: "Aeonik Pro", sans-serif;
+  font-family: "Aeonik Pro", sans-serif !important;
   font-weight: normal;
   font-style: normal;
   margin: 0px;
@@ -93,7 +93,7 @@ h5,
 h6,
 p,
 a {
-  font-family: "Aeonik Pro", sans-serif;
+  font-family: "Aeonik Pro", sans-serif !important;
   margin: 0px;
 }
 
@@ -108,7 +108,7 @@ ul {
 }
 
 button {
-  font-family: "Aeonik Pro", sans-serif;
+  font-family: "Aeonik Pro", sans-serif !important;
 }
 
 .over {

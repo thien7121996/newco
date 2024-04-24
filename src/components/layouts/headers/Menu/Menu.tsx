@@ -34,7 +34,7 @@ export const Menu = () => {
       </ItemMenu>
       <ItemMenu className="our-clients-menu">
         <LinkItem onClick={closeMenu} href="/our-clients">
-          Case Study
+          Case Studies
         </LinkItem>
       </ItemMenu>
       <ItemMenu className="career-and-new-menu">
