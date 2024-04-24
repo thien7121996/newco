@@ -5,6 +5,11 @@ import { ReactNode } from "react";
 import Providers from "./providers";
 import { Layout } from "@/components/layouts/Layout";
 import { detectMobileDevice } from "@/utils/detectMobileDevice";
+import "swiper/scss";
+import "swiper/scss/navigation";
+import "swiper/scss/pagination";
+import "swiper/css/grid";
+import "swiper/css/bundle";
 
 export default async function RootLayout({
   children,

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useRef } from "react";
 import {
   DownloadSection,
   DownloadWrapper,
@@ -10,12 +9,14 @@ import BackgroundDownload from "@/styles/assets/bgdownload.png";
 import ImportLogo from "@/styles/assets/import.png";
 
 export const DownloadUs = () => {
-  const scopeRef = useRef<HTMLDivElement>(null);
-  const titleTargetRef = useRef<HTMLParagraphElement>(null);
-  const sloganTargetRef = useRef<HTMLParagraphElement>(null);
+  // const scopeRef = useRef<HTMLDivElement>(null);
+  // const titleTargetRef = useRef<HTMLParagraphElement>(null);
+  // const sloganTargetRef = useRef<HTMLParagraphElement>(null);
 
   return (
-    <DownloadWrapper ref={scopeRef}>
+    <DownloadWrapper
+    // ref={scopeRef}
+    >
       <BackgroundWrapper className="download-bg">
         <Image
           src={BackgroundDownload.src}

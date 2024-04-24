@@ -25,7 +25,7 @@ export const BlogLabel = styled.label`
   line-height: 16px;
   letter-spacing: 0.015em;
   text-transform: uppercase;
-  color: #41b6b7;
+  color: #141416;
 `;
 export const BlogTitle = styled.h3`
   font-weight: 700;

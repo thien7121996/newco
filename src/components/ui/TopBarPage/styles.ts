@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MEDIA_QUERY } from "@/utils/screenSize";
 
-export const TopBarPageWraper = styled.div`
+export const TopBarPageWrapper = styled.div`
   display: block;
   max-width: 100%;
   width: 100%;

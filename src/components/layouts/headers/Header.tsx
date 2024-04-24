@@ -1,5 +1,6 @@
 import { atom, useSetAtom } from "jotai";
 import Image from "next/image";
+import Link from "next/link";
 import { LegacyRef, forwardRef, useCallback, useRef } from "react";
 import { Menu } from "./Menu";
 import { MenuLanguage } from "./MenuLanguage/MenuLanguage";
@@ -49,7 +50,9 @@ export const Header = forwardRef<object, Props>(({ isMobile }, ref) => {
       <HeaderSection ref={headerContainer}>
         <FirstHeaderSection ref={ref as LegacyRef<HTMLDivElement>}>
           <HeaderLogo>
-            <Image src={Logo.src} alt="Logo" width={170} height={43} />
+            <Link href="/">
+              <Image src={Logo.src} alt="Logo" width={170} height={43} />
+            </Link>
           </HeaderLogo>
           <MenuButton onClick={handleToggle}>
             <Image

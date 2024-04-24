@@ -5,7 +5,7 @@ import {
   TopBarBreadcrumb,
   TopBarIcon,
   TopBarPageSection,
-  TopBarPageWraper,
+  TopBarPageWrapper,
   TopBarText,
 } from "./styles";
 import HomeIcon from "@/styles/assets/homeicon.png";
@@ -16,7 +16,7 @@ type Props = {
 
 export const TopBarPage: FC<Props> = ({ headingPage }) => {
   return (
-    <TopBarPageWraper>
+    <TopBarPageWrapper>
       <TopBarPageSection>
         <TopBarBreadcrumb>
           <TopBarIcon>
@@ -25,7 +25,7 @@ export const TopBarPage: FC<Props> = ({ headingPage }) => {
           <TopBarText>{headingPage}</TopBarText>
         </TopBarBreadcrumb>
       </TopBarPageSection>
-    </TopBarPageWraper>
+    </TopBarPageWrapper>
   );
 };
 

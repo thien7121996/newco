@@ -5,13 +5,6 @@ import React, { FC, PropsWithChildren, useCallback, useRef } from "react";
 import { Footer } from "./footers";
 import { Header } from "./headers";
 import { LayoutWrapper, LayoutPageWrapper } from "./styles";
-import { DownloadUs } from "@/components/ui/DownloadUs";
-import "swiper/scss";
-import "swiper/scss/navigation";
-import "swiper/scss/pagination";
-import "swiper/css/grid";
-import "swiper/css/bundle";
-import "@/styles/globals.css";
 
 export const headerHeightInit = atom(70);
 
@@ -52,7 +45,7 @@ export const Layout: FC<PropsWithChildren<Props>> = ({
           style={{ paddingTop: `${headerHeight}px` }}
         >
           {children}
-          <DownloadUs />
+
           <Footer />
         </LayoutPageWrapper>
       </LayoutWrapper>

@@ -82,6 +82,7 @@ body {
   font-weight: normal;
   font-style: normal;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -112,7 +113,7 @@ button {
 
 .over {
   -webkit-transition: 200ms;
-  transition: 200ms;
+  transition: all ease-in 200ms;
 }
 
 .over:hover {
@@ -120,10 +121,9 @@ button {
   transform: translate(-15px, -15px);
   -webkit-transition: 200ms;
   transition: 200ms;
-  box-shadow: 10px 10px 0px 0px rgba(216, 0, 39, 0.75);
-  -webkit-box-shadow: 10px 10px 0px 0px rgba(216, 0, 39, 0.75);
-  -moz-box-shadow: 10px 10px 0px 0px rgba(216, 0, 39, 0.75);
-
+  box-shadow: 10px 10px 0px 0px #14141663;
+  -webkit-box-shadow: 10px 10px 0px 0px #14141663;
+  -moz-box-shadow: 10px 10px 0px 0px #14141663;
   border: 1px solid #f1f1f1 !important;
 }
 

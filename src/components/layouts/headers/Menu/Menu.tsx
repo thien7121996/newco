@@ -28,7 +28,7 @@ export const Menu = () => {
         </LinkItem>
       </ItemMenu>
       <ItemMenu className="service-menu">
-        <LinkItem onClick={closeMenu} href="/">
+        <LinkItem onClick={closeMenu} href="/service">
           Service
         </LinkItem>
       </ItemMenu>
@@ -39,7 +39,12 @@ export const Menu = () => {
       </ItemMenu>
       <ItemMenu className="career-and-new-menu">
         <LinkItem onClick={closeMenu} href="/career-and-news">
-          Career and News
+          Career and news
+        </LinkItem>
+      </ItemMenu>
+      <ItemMenu className="career-and-new-menu">
+        <LinkItem onClick={closeMenu} href="/contact-us">
+          Contact us
         </LinkItem>
       </ItemMenu>
     </MenuWrapper>

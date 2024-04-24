@@ -4,9 +4,10 @@
 // We can not useState or useRef in a server component, which is why we are
 // extracting this part out into it's own file with 'use client' on top
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import NextNProgress from "nextjs-progressbar";
+import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import { ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
+import StyledComponentsRegistry from "@/configs/lib/registry";
 import { theme } from "@/configs/theme";
 
 function makeQueryClient() {
@@ -48,13 +49,16 @@ export default function Providers({ children }: { children: ReactNode }) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <NextNProgress
-        color={theme.colors.primary}
-        height={5}
-        options={{ showSpinner: true }}
-      />
       {/* {isClient && <ReactQueryDevtools initialIsOpen={false} />} */}
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ProgressBar
+        height="5px"
+        color={theme.colors.primary}
+        options={{ showSpinner: false }}
+        shallowRouting
+      />
+      <StyledComponentsRegistry>
+        <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      </StyledComponentsRegistry>
     </QueryClientProvider>
   );
 }
